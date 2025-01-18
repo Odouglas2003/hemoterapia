@@ -1,5 +1,6 @@
 import Login from "./pages/login/pages";
-import Das from "./pages/dashboard/dashboard";
+import Das from "./pages/dashboard/page";
+
 export default function Home() {
   return (
     <>
