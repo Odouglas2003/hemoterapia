@@ -6,16 +6,25 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     display: block;
+    justify-content: center;
     font-weight: bold;
     font-size: x-large;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100vh;
+    position: relative;
   }
   
   .card {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 350px;
-    width: 300px;
+    min-height: 450px;
+    width: 400px;
     flex-direction: column;
     gap: 35px;
     background: #F5DEB3;
@@ -23,9 +32,64 @@
           -16px -16px 32px #fefefe76;
     border-radius: 8px;
   }
+  .inputBoxf{
+    position: relative;
+    width: 350px;
+  }
+  .inputBoxf input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 0.7em;
+    background: transparent;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transition: 0.1s;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .inputBoxf span {
+    margin-top: 5px;
+    position: absolute;
+    left: 0;
+    transform: translateY(-4px);
+    margin-left: 15px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 12px;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+  }
+  
+  .inputBoxf input:valid~span,
+  .inputBoxf input:focus~span {
+    transform: translateX(113px) translateY(-15px);
+    font-size: 0.6em;
+    padding: 2px 45px;
+    background: #8B4513;
+    letter-spacing: 0.2em;
+    color: #fff;
+    border: 2px;
+  }
+  
+  .inputBoxf input:valid,
+  .inputBoxf input:focus {
+    border: 2px solid #000;
+    border-radius: 8px;
+  }
+
+
+
+
+
   .inputBoxx{
     position: relative;
-    width: 250px;
+    width: 350px;
   }
   .inputBoxx input {
     width: 100%;
@@ -33,7 +97,7 @@
     outline: none;
     border: none;
     color: #000;
-    font-size: 1em;
+    font-size: 0.7em;
     background: transparent;
     border-left: 2px solid #000;
     border-bottom: 2px solid #000;
@@ -46,7 +110,7 @@
     position: absolute;
     left: 0;
     transform: translateY(-4px);
-    margin-left: 10px;
+    margin-left: 15px;
     padding: 10px;
     pointer-events: none;
     font-size: 12px;
@@ -60,8 +124,8 @@
   .inputBoxx input:valid~span,
   .inputBoxx input:focus~span {
     transform: translateX(113px) translateY(-15px);
-    font-size: 0.8em;
-    padding: 5px 30px;
+    font-size: 0.6em;
+    padding: 2px 70px;
     background: #8B4513;
     letter-spacing: 0.2em;
     color: #fff;
