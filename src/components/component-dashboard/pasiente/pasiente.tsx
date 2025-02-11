@@ -1,10 +1,11 @@
 "use client";
 import "./pasientes.css";
+import Link from "next/link";
 export default function pasiente() {
   return (
     <>
       <div className="body">
-        <a className="cardf wallet" href="#">
+        <Link className="cardf wallet" href="/pages/pasiente">
           <div className="overlayx"></div>
           <div className="circle">
             <svg
@@ -22,8 +23,8 @@ export default function pasiente() {
               <path d="M5.5 21c0-3.6 3-6.5 6.5-6.5s6.5 2.9 6.5 6.5"></path>
             </svg>
           </div>
-          <p>Paciente</p>
-        </a>
+          <p>Pacientes</p>
+        </Link>
       </div>
     </>
   );
